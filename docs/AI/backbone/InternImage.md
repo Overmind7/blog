@@ -14,7 +14,7 @@ InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Conv
 
 > [[论文速览\]Deformable Convolutional Networks; DCN[1703.06211]](https://www.bilibili.com/video/BV1C94y1272t/?spm_id_from=333.337.search-card.all.click&vd_source=94981da9982f5add022a08a2acff3887)
 >
-> [可变形卷积（DCN](https://blog.csdn.net/jiangqixing0728/article/details/126269423)
+> [可变形卷积 DCN](https://blog.csdn.net/jiangqixing0728/article/details/126269423)
 >
 > ICCV 2017 Microsoft Research Asia; DCN
 
@@ -158,7 +158,7 @@ $$
 
 G 表示聚合组的数量，对于第 g 个组，$w_g ∈ \mathbb{R}^{C×{C}^{\prime} }$，$m_{gk} ∈ \R$ 表示该组的位置无关投影权重，其中 ${C}^{\prime} = C/G$ 表示组维度。 $m_{gk} ∈ \R$ 表示第 g 组中第 k 个采样点的调制标量，通过 softmax 函数沿维度 K 进行归一化。 
 
-$\mathrm{x}_g ∈ \R^{{C}^{\prime }×H×W}$ 表示切片的输入特征图。 $\Delta p_{gk}$是第g组中网格采样位置$p_k$对应的偏移量。
+$\mathrm{x}_g ∈ \R^{C^{\prime }×H×W}$ 表示切片的输入特征图。 $\Delta p_{gk}$是第g组中网格采样位置 $p_k$ 对应的偏移量。
 
 总而言之, DCNv3 作为 DCN系列的扩展具有以下几个特性：
 
