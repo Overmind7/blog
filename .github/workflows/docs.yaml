@@ -27,7 +27,6 @@ jobs:
               with:
                   node-version: 16
                   cache: pnpm
-            - run: npm install
 
             - name: Build
               run: pnpm docs:build
