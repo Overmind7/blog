@@ -116,7 +116,7 @@
 
 ### 损失计算
 
-<img src="assets/image-20230513144219611.png" alt="image-20230513144219611" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Overmind7/images/main/img/image-20230513144219611.png" alt="image-20230513144219611" style="zoom:50%;" />
 
 - 使用 L1 损失，分别对init 和 refined 进行损失计算，加权相加
 
