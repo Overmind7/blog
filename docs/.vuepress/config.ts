@@ -262,7 +262,7 @@ module.exports= {
     docsDir: 'docs',
 
     // 假如文档放在一个特定的分支下：
-    // docsBranch: 'master',
+    docsBranch: 'main',
 
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
