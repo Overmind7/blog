@@ -51,7 +51,7 @@ $t\in\{0,1,2,...,T\}$
 
 $t\in[0,1]$  $x_t \rightarrow x_{t+\Delta t},~~\Delta t \rightarrow0$
 $$
-dx = \underset{确定性}{\underbrace{f(x,t)dt}} + \underset{不确定性}{\underbrace{g(t)dw}}
+dx = \underset{\text{确定性}}{\underbrace{f(x,t)dt}} + \underset{\text{不确定性}}{\underbrace{g(t)dw}}
 $$
 $f(x,t)$： drift coefficient
 
@@ -96,11 +96,11 @@ $$
 \begin{align}
 
 \notag\\
-p(x_t|x_{t+\Delta t}) ~&均值：              \notag \\
-&方差：                \notag\\
+p(x_t|x_{t+\Delta t}) ~&\text{均值：}              \notag \\
+&\text{方差：}                \notag\\
 \notag\\
 dx &=  [f(x,t)-g^2(t)\nabla_{x_t}\log p(x_t)] + g(t)dw  \notag\\
-采样：x_{t+\Delta t}-x_t &= [f(x_{t+\Delta t},{t+\Delta t})-g^2({t+\Delta t})\nabla_{x_{t+\Delta t}}\log p({t+\Delta t})]\Delta t + g(t+\Delta t)\sqrt{\Delta t}\varepsilon    \notag \\
+\text{采样：}x_{t+\Delta t}-x_t &= [f(x_{t+\Delta t},{t+\Delta t})-g^2({t+\Delta t})\nabla_{x_{t+\Delta t}}\log p({t+\Delta t})]\Delta t + g(t+\Delta t)\sqrt{\Delta t}\varepsilon    \notag \\
 \end{align}
 $$
 

@@ -118,6 +118,9 @@ module.exports= {
                   text: '3D',
                   collapsible: true,
                   children: [ 
+                    '/AI/3D/MVSNet.md',
+                    '/AI/3D/PointMVS.md',
+                    '/AI/3D/DGCNN.md',
                     '/AI/3D/DMTet.md',
                     '/AI/3D/MeshCNN.md',
                     
@@ -134,7 +137,11 @@ module.exports= {
                     '/AI/generate/diffusion/DDPM.md',
                     '/AI/generate/diffusion/SDE.md',
 
+                    '/AI/generate/diffusion/条件扩散.md',
 
+                    '/AI/generate/diffusion/扩散模型与受控图像生成.md',
+
+                    '/AI/generate/diffusion/CLIP引导生成.md',
                     '/AI/generate/diffusion/StableDiffusion.md',
 
                     '/AI/generate/diffusion/PoseDiffusion.md',                    
@@ -161,6 +168,7 @@ module.exports= {
                     collapsible: true,
                     children:[
                         '/AI/backbone/数据集.md',
+                        '/AI/backbone/3D数据集.md',
                     ],
                 },
 
@@ -194,6 +202,9 @@ module.exports= {
             ],
 
         },
+
+
+
 
         // 在线编辑设置
         repo: 'Overmind7/blog',

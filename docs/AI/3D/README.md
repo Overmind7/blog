@@ -2,7 +2,11 @@
 
 
 
+[MVSNet](./MVSNet.md)
 
+[DGCNN](./DGCNN.md)
+
+[PointMVS](./PointMVS.md)
 
 
 

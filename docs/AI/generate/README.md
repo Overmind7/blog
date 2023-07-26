@@ -16,7 +16,13 @@ sidebar: false
 
 
 
+[条件扩散](./条件扩散.md)
 
+[扩散模型与受控图像生成](./diffusion/扩散模型与受控图像生成.md)
+
+
+
+[CLIP引导生成](./diffusion/CLIP引导生成.md)
 
 [StableDiffusion](./diffusion/StableDiffusion.md)
 
