@@ -9,15 +9,28 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v3
+            - uses: actions/checkout@v3
+              with:
+                fetch-depth: 0
+
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v2
+              with:
+                # 选择要使用的 pnpm 版本
+                version: 8
+                # 使用 pnpm 安装依赖
+                run_install: true
+
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
               with:
                   node-version: 16
-                  cache: npm
+                  cache: pnpm
             - run: npm install
 
             - name: Build
-              run: npm run docs:build
+              run: pnpm docs:build
 
             - name: Deploy to GitHub Pages
               uses: crazy-max/ghaction-github-pages@v2
