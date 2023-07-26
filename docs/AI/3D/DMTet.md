@@ -1,13 +1,8 @@
 ---
-title: DMTet
-date: 2023-03-30 15:31:21
-tags:
-    - 三维重建
-    - 3D模型
-    - SDF
+
 ---
 
-
+# DMTet
 
 > [Deep Marching Tetrahedra: a Hybrid Representation for High-Resolution 3D Shape Synthesis (nv-tlabs.github.io)](https://nv-tlabs.github.io/DMTet/)
 
@@ -27,31 +22,31 @@ tags:
 - 可微的 marching tetrahedra layer ：
     - 将隐式的 SDF 编码转换成显式的mesh
 
-## 3D Representation
+### 3D Representation
 
-![image-20230330105757900](assets/image-20230330105757900.png)
+![image-20230330105757900](https://raw.githubusercontent.com/Overmind7/images/main/img/image-20230330105757900.png)
 
-​     <img src="C:/Users/a1036/Desktop/扩散模型/assets/image-20230330114604467.png" alt="image-20230330114604467" style="zoom:50%;" />     <img src="assets/image-20230330114625019.png" alt="image-20230330114625019" style="zoom:50%;" />
+​     <img src="https://raw.githubusercontent.com/Overmind7/images/main/img/image-20230330114604467-1690364899460-1.png" alt="image-20230330114604467" style="zoom:50%;" />     <img src="https://raw.githubusercontent.com/Overmind7/images/main/img/image-20230330114625019.png" alt="image-20230330114625019" style="zoom:50%;" />
 
 SDF：符号距离场
 
 
 
-## Model
+### Model
 
-![image-20230330114214366](assets/image-20230330114214366.png)
+![image-20230330114214366](https://raw.githubusercontent.com/Overmind7/images/main/img/image-20230330114214366.png)
 
-### Input encoder
+#### Input encoder
 
 使用PVCNN作为输入编码器，从点云中提取一个三维特征体$F_{vol}(x)$。当输入是一个粗体素形状时，我们对其表面的点进行采样。我们通过三线插值为一个网格顶点$v∈\R^3$计算一个特征向量$F_{vol}(v, x)$。
 
-### Initial Prediction of SDF
+#### Initial Prediction of SDF
 
 - 使用一个全连接的网络$s(v)=MLP(F_{vol}(v, x), v)$来预测初始可变形四面体网格中每个顶点的SDF值。
 
 - 全连接网络另外输出一个特征向量$f(v)$，用于体积细分阶段的表面细化。
 
-### Surface Refinement with Volume Subdivision
+#### Surface Refinement with Volume Subdivision
 
 1. 在获得初始SDF后，迭代细化表面，并对四面体网格进行细分。
     - 首先根据当前的$s(v)$值来识别表面四面体$T_{surf}$。
@@ -87,11 +82,11 @@ $$
 
 
 
-### Learnable Surface Subdivision
+#### Learnable Surface Subdivision
 
 在使用MT提取表面网格后，我们可以进一步应用可学习的表面细分。具体来说，我们在提取的网格上建立一个新的图形，并使用GCN来预测每个顶点 $v^{'}_i$ 的更新位置，以及用于Loop Subvidision的 $α_i$。这一步消除了量化误差，并通过调整 $α_i$ 减轻了经典环形细分法的近似误差，这些误差在经典方法中是固定的。??
 
-### 3D discriminator
+#### 3D discriminator
 
 我们在从生成器预测的最终表面上应用一个三维判别器 $D$。我们根据经验发现，使用DECOR-GAN中的一个三维CNN作为从预测的网格中计算出来的有符号距离场的判别器，可以有效地捕捉局部细节。
 
@@ -101,7 +96,7 @@ $$
 
 
 
-## 损失函数
+### 损失函数
 
 表面对齐损失
 
