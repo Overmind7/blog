@@ -18,7 +18,6 @@ tags:
     - 将之前两类扩散模型进行了理论上的统一
     - 本质还是估计 Score
 
-<!--more-->
 
 ## 用 SDE 描述扩散模型
 
@@ -162,7 +161,7 @@ $$
 \begin{align}
 x_{t+1}&=\sqrt{1-\beta_{t+1}}x_t+\sqrt{\beta_{t+1}}\varepsilon \notag \\
 
-\{\beta_i\}^T_{i=1}, &~~~令 \{\bar\beta_i=T\beta_i \}^T_{i=1} \notag \\
+\{\beta_i\}^T_{i=1}, &~~~\text{令} \{\bar\beta_i=T\beta_i \}^T_{i=1} \notag \\
 
 x_{t+1}&=\sqrt{1-\frac{\bar\beta_{t+1}}{T} }x_t+\sqrt{\frac{\bar\beta_{t+1}}{T} }\varepsilon  \notag \\
 

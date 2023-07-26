@@ -8,15 +8,13 @@ sidebar: false
 
 ## 扩散模型
 
+
 [DDPM](./diffusion/DDPM.md)
 
-[SDE](./SDE/diffusion.md)
+[SDE](./diffusion/SDE.md)
 
 
-
-
-
-[条件扩散](./条件扩散.md)
+[条件扩散](./diffusion/条件扩散.md)
 
 [扩散模型与受控图像生成](./diffusion/扩散模型与受控图像生成.md)
 

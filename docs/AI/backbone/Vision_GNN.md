@@ -32,9 +32,9 @@ $$
 
 $\mathcal{N}\left(\mathbf{x}_{i}\right)$ 代表了中心节点  $x_i$ 相邻节点集合， $g(⋅)$ 是聚合函数， $ℎ(⋅)$ 是更新函数。
 
-- 其中，聚合函数 $g(⋅) $ 有很多种，本文采用了一个较为简单的函数，叫 max-relative graph convolution： $g(⋅)=x^{′′}_i=[x_i,\max (\{x_j−x_i∣j∈\mathcal{N}\left(\mathbf{x}_{i}\right)\}]$ 。也就是计算中心节点 $x_i$ 与相邻所有节点的差，取最大值，再与中心节点 $x_i$ 结合。
+- 其中，聚合函数 $g(⋅) $ 有很多种，本文采用了一个较为简单的函数，叫 max-relative graph convolution： $g(⋅)=x^{\prime \prime }_i=[x_i,\max (\{x_j−x_i∣j∈\mathcal{N}\left(\mathbf{x}_{i}\right)\}]$ 。也就是计算中心节点 $x_i$ 与相邻所有节点的差，取最大值，再与中心节点 $x_i$ 结合。
 
-- 更新函数 ℎ(⋅) 比较简单，就是 $ℎ(⋅)=x_i^′=x^{′′}W_{update}$ 。值得一提的是，作者借鉴了 Transformer 多头注意力机制，用了多头更新机制： 
+- 更新函数 ℎ(⋅) 比较简单，就是 $ℎ(⋅)=x_i^{\prime }=x^{\prime \prime }W_{update}$ 。值得一提的是，作者借鉴了 Transformer 多头注意力机制，用了多头更新机制： 
     $$
     \mathbf{x}_{i}^{\prime}=\left[\text { head }^{1} W_{u p d a t e}^{1}, \text { head }{ }^{2} W_{u p d a t e}^{2}, \cdots, \text { head }{ }^{h} W_{u p d a t e}^{h}\right]
     $$
