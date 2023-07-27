@@ -8,11 +8,17 @@ sidebar: false
 
 ## 扩散模型
 
-
 [DDPM](./diffusion/DDPM.md)
+
+[DDIM](./diffusion/DDIM.md)
+
+[Score-based-Diffusion-model](./diffusion/Score-based-Diffusion-model.md)
 
 [SDE](./diffusion/SDE.md)
 
+[SR3.md](./diffusion/SR3.md)
+
+[Deblurring-via-Stochastic-Refinement](./diffusion/Deblurring-via-Stochastic-Refinement.md)
 
 [条件扩散](./diffusion/条件扩散.md)
 

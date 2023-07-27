@@ -134,8 +134,19 @@ module.exports= {
                   text: '扩散模型',
                   collapsible: true,
                   children: [ 
-                    '/AI/generate/diffusion/DDPM.md',
-                    '/AI/generate/diffusion/SDE.md',
+                    {
+                        text: '扩散模型理论',
+                        collapsible: true,
+                        children: [
+                            '/AI/generate/diffusion/DDPM.md',
+                            '/AI/generate/diffusion/DDIM.md',
+                            '/AI/generate/diffusion/Score-based-Diffusion-model.md',
+                            '/AI/generate/diffusion/SDE.md',
+                        ],
+                    },
+                    '/AI/generate/diffusion/SR3.md',
+                    '/AI/generate/diffusion/Deblurring-via-Stochastic-Refinement.md',
+
 
                     '/AI/generate/diffusion/条件扩散.md',
 
