@@ -192,7 +192,7 @@ $$
 输入为低分辨率图像x以及高斯噪声yt，输出为高分辨率图像。
 输入通过公式重复迭代T次得到SR图像
 
-<img src="C:\Users\a1036\AppData\Roaming\Typora\typora-user-images\image-20220811214803152.png" alt="" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Overmind7/images/main/img/image-20220811214803152.png" alt="" style="zoom:67%;" />
 
 类似于 Langevin 动力学的一个步骤，其中f_θ 提供了数据对数密度梯度的估计
 
