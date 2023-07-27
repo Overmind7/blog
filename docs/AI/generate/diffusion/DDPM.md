@@ -1,10 +1,4 @@
 ---
-tags:
-    - 扩散模型
-    - 理论
-    - 生成模型
-    - DDPM
-    - test
 author: 文威
 ---
 
@@ -45,7 +39,7 @@ $$
 $$
 x_t=\sqrt{\alpha_t\alpha_{t-1}}x_{t-2}+\sqrt{1-\alpha_t\alpha_{t-1}}z,~~~~z\sim N(0,I) \notag
 $$
-令 $\bar\alpha_t =  \prod_{i=1}^{T}\alpha_i  $，得到 $x_0$ 与 $x_t$ 的关系：
+令 $\bar\alpha_t =  \prod_{i=1}^{T}\alpha_i$，得到 $x_0$ 与 $x_t$ 的关系：
 $$
 x_t = \sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}z
 $$
