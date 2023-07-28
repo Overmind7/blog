@@ -1,10 +1,10 @@
 ---
 home: true
 actions:
-  - text: 快速上手
-    link: /zh/guide/getting-started.html
+  - text: 刷题
+    link: /coding/README.md
     type: primary
-  - text: 项目简介
+  - text: 论文
     link: /AI/
     type: secondary
 features:
@@ -17,11 +17,17 @@ features:
 sidebar: 'auto'
 ---
 
-# Hello VuePress
+# Test title
 
 
 
 
 
 ## test 2
+
+::: tip
+
+test
+
+:::
 

@@ -18,8 +18,8 @@ import {cut} from "nodejs-jieba"
 module.exports= {
     base: "/blog/",
     lang: 'zh-CN',
-    title: ' 个人学习资料 ',
-    description: '这是我的第一个 VuePress 站点',
+    title: ' aurora ',
+    description: 'test VuePress 站点',
   //   head:
     theme: defaultTheme({
     // theme: themeSidebar({
@@ -54,7 +54,7 @@ module.exports= {
                 children: [
                     {
                         text: 'C++',
-                        link: '/编程语言/CPP'
+                        link: '/language/CPP'
                     },
                 ],
             },
@@ -101,6 +101,14 @@ module.exports= {
                     {
                         text: '代码随想录',
                         link: 'https://programmercarl.com/',
+                    },
+                    {
+                        text: '小林计网',
+                        link: 'https://xiaolincoding.com/network/1_base/tcp_ip_model.html#%E7%BD%91%E7%BB%9C%E5%B1%82',
+                    },
+                    {
+                        text: '拓跋阿秀',
+                        link: 'https://interviewguide.cn/notes/03-hunting_job/02-interview/01-01-01-basic.html',
                     },
                 ]
         }   ,
