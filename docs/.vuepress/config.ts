@@ -23,6 +23,7 @@ module.exports= {
   //   head:
     theme: defaultTheme({
     // theme: themeSidebar({
+        contributors: false,
         editLink: true,
         navbar: 
         [
