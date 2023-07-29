@@ -8,9 +8,6 @@
 
 [评价指标](./评价指标.md)
 
-test
-在线测试
-
 
 
 [Swin Transformer](./Swin_Transformer.md)
