@@ -216,7 +216,7 @@ module.exports= {
                     '/AI/backbone/GCN.md',
                     '/AI/backbone/Vision_GNN.md',
                     '/AI/backbone/DETR.md',
-                    
+                    '/AI/backbone/Decoupled-Knolwdge-Distillation.md',
                     ],
                 },
             ],
