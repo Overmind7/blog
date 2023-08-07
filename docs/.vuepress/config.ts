@@ -57,6 +57,10 @@ module.exports= {
                         text: 'C++',
                         link: '/language/CPP'
                     },
+                    {
+                        text: 'python',
+                        link: '/language/python'
+                    },
                 ],
             },
 
@@ -89,6 +93,10 @@ module.exports= {
                     {
                         text: '在线公式编辑',
                         link: 'https://www.latexlive.com/##',
+                    },
+                    {
+                        text: '疑难杂症',
+                        link: '/problems',
                     },
                 ],
             },
