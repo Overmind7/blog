@@ -119,6 +119,10 @@ module.exports= {
                         text: '拓跋阿秀',
                         link: 'https://interviewguide.cn/notes/03-hunting_job/02-interview/01-01-01-basic.html',
                     },
+                    {
+                        text: 'labuladong',
+                        link: 'https://labuladong.github.io/algo/home/',
+                    },
                 ]
         }   ,
 
