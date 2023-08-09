@@ -1,15 +1,17 @@
-import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from 'vuepress'
+import { defineUserConfig } from 'vuepress';
+import { defaultTheme } from 'vuepress';
 
 // import { searchPlugin } from '@vuepress/plugin-search'
 // import { flexsearch } from 'vuepress-plugin-flexsearch-pro'
 
-import { searchProPlugin } from "vuepress-plugin-search-pro"
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
-import { copyCodePlugin } from "vuepress-plugin-copy-code2"
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { copyCodePlugin } from "vuepress-plugin-copy-code2";
+import { copyrightPlugin } from "vuepress-plugin-copyright2";
 
-import {cut} from "nodejs-jieba"
+
+import {cut} from "nodejs-jieba";
 // import themeSidebar from 'vuepress-theme-sidebar'
 // https://www.cnblogs.com/dingshaohua/p/17432484.html
 // 自动边栏
@@ -305,7 +307,16 @@ module.exports= {
 
         copyCodePlugin({
             // 插件选项
-          }),
+        }),
+
+        copyrightPlugin({
+            global: true,
+            disableCopy: true,
+            disableSelection: true,
+            author: 'wenwei',
+
+        }),
+
 
 
 
