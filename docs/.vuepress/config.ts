@@ -311,8 +311,8 @@ module.exports= {
 
         copyrightPlugin({
             global: true,
-            disableCopy: true,
-            disableSelection: true,
+            // disableCopy: true,
+            // disableSelection: true,
             author: 'wenwei',
 
         }),
