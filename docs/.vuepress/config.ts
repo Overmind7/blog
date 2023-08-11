@@ -53,7 +53,7 @@ module.exports= {
                 ],
             },
             {
-                text: '编程语言',
+                text: '编程语言/框架',
                 children: [
                     {
                         text: 'C++',
@@ -62,6 +62,10 @@ module.exports= {
                     {
                         text: 'python',
                         link: '/language/python'
+                    },
+                    {
+                        text: 'Pytorch',
+                        link: '/language/pytorch'
                     },
                 ],
             },

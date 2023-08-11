@@ -24,6 +24,20 @@ sidebar: auto
 
 
 
+
+
+::: warning
+
+使用count，返回的是被查找元素的个数。如果有，返回1；否则，返回0。
+
+- 注意，map中不存在相同元素，所以返回值只能是1或0。
+
+使用find，返回的是被查找元素的位置，没有则返回map.end()。
+
+:::
+
+
+
 ## unordered_map
 
  在C++中，存在一种简单申请哈希表的函数：`unordered_map<element type> name {{},{}}`
