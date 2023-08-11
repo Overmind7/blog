@@ -5,3 +5,5 @@
 [自定义损失函数](./自定义损失函数.md)
 
 [Tensorboard](./Tensorboard.md)
+
+[batch的最后一个epoch的张量对齐问题](./batch的最后一个epoch的张量对齐问题.md)
