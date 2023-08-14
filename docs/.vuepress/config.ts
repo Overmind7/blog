@@ -76,19 +76,19 @@ module.exports= {
                 children: [
                     {
                         text:'计算机网络',
-                        link:'base/network'
+                        link:'/base/network'
                     },
                     {
                         text:'数据库',
-                        link:'base/database'
+                        link:'/base/database'
                     },
                     {
                         text:'计算机组成原理',
-                        link:'base/ComputerOrganization'
+                        link:'/base/ComputerOrganization'
                     },
                     {
                         text:'操作系统',
-                        link:'base/os'
+                        link:'/base/os'
                     }
 
                 ]
