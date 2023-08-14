@@ -9,6 +9,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { copyrightPlugin } from "vuepress-plugin-copyright2";
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 
 
 import {cut} from "nodejs-jieba";
@@ -75,19 +76,19 @@ module.exports= {
                 children: [
                     {
                         text:'计算机网络',
-                        link:'计算机基础/计算机网络'
+                        link:'base/network'
                     },
                     {
                         text:'数据库',
-                        link:'计算机基础/数据库'
+                        link:'base/database'
                     },
                     {
                         text:'计算机组成原理',
-                        link:'计算机基础/计算机组成原理'
+                        link:'base/ComputerOrganization'
                     },
                     {
                         text:'操作系统',
-                        link:'计算机基础/操作系统'
+                        link:'base/os'
                     }
 
                 ]
@@ -307,6 +308,7 @@ module.exports= {
             katex: true,
             mermaid: true,
             mark: true,
+            presentation: true,
         }),
 
 
@@ -321,6 +323,13 @@ module.exports= {
             author: 'wenwei',
 
         }),
+
+        prismjsPlugin({
+            // 配置项
+            preloadLanguages: ['cpp'],
+          }),
+
+
 
 
 

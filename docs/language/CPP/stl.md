@@ -20,7 +20,7 @@ sidebar: auto
 
 ## Map
 
-
+> [unordered_map和map的区别_unordered_map map_美丽心灵的永恒阳光的博客-CSDN博客](https://blog.csdn.net/weixin_39690454/article/details/108354997)
 
 
 
@@ -68,7 +68,7 @@ sidebar: auto
 
 
 
-```c++
+```cpp
 #include <iostream>
 #include <string>
 #include <unordered_map>
@@ -124,7 +124,7 @@ C++ STL 中的 unordered_set 容器类模板中未提供 at() 成员函数，也
 
 ### 头文件
 
-```c++
+```cpp
 #include <unordered_set>
 ```
 
@@ -132,7 +132,7 @@ C++ STL 中的 unordered_set 容器类模板中未提供 at() 成员函数，也
 
 ### 初始化
 
-```c++
+```cpp
 unordered_set<int> set1; //创建空set
 unordered_set<int> set2(set1);    //拷贝构造
 unordered_set<int> set3(set1.begin(), set1.end());    //迭代器构造
@@ -145,37 +145,37 @@ unordered_set<int> set6 {1,2,10,10};//使用initializer_list初始化
 
 #### 创建空的set
 
-```c++
+```cpp
 unordered_set<int> set1;
 ```
 
 #### 拷贝构造
 
-```c++
+```cpp
 unordered_set<int> set2(set1);
 ```
 
 ####　使用迭代器构造
 
-```c++
+```cpp
 unordered_set<int> set3(set1.begin(), set1.end());
 ```
 
 #### 使用数组作为初值构造
 
-```c++
+```cpp
 unordered_set<int> set4(arr,arr+5);
 ```
 
 #### 移动构造
 
-```c++
+```cpp
 unordered_set<int> set4(arr,arr+5);
 ```
 
 #### 使用待处置的列表构造
 
-```c++
+```cpp
 unordered_set<int> set6 {1,2,10,10};
 ```
 
@@ -187,7 +187,7 @@ unordered_set<int> set6 {1,2,10,10};
 
 判断是否为空
 
-```c++
+```cpp
 set1.empty();	//若容器为空，则返回 true；否则 false
 ```
 
@@ -195,7 +195,7 @@ set1.empty();	//若容器为空，则返回 true；否则 false
 
 查找
 
-```c++
+```cpp
 set1.find(2);	//查找2，找到返回迭代器，失败返回end()
 ```
 
@@ -203,7 +203,7 @@ set1.find(2);	//查找2，找到返回迭代器，失败返回end()
 
 出现次数
 
-```c++
+```cpp
 set1.count(2);	//返回指2出现的次数，0或1
 ```
 
@@ -211,7 +211,7 @@ set1.count(2);	//返回指2出现的次数，0或1
 
 插入元素
 
-```c++
+```cpp
 //插入元素，返回pair<unordered_set<int>::iterator, bool>
 set1.insert(3);
 //使用initializer_list插入元素
@@ -231,7 +231,7 @@ set1.insert(set2.begin(), set2.end());
     > 3. 如果元素被插入，返回的迭代器会指向新元素
     > 4. 如果没有被插入，迭代器指向阻止插入的元素
 
-    ```c++
+    ```cpp
     auto pr = words.insert("ninety"); // Returns a pair - an iterator & a bool value
     ```
 
@@ -240,7 +240,7 @@ set1.insert(set2.begin(), set2.end());
     > 1. 可以用一个迭代器作为insert()的第一个参数，它指定了元素被插入的位置
     > 2. 在这种情况下，只会返回一个迭代器
 
-    ```c++
+    ```cpp
     auto iter = words.insert (pr.first, "nine"); // 1st arg is a hint. Returns an iterator
     ```
 
@@ -249,7 +249,7 @@ set1.insert(set2.begin(), set2.end());
     > 1. 插入初始化表中的元素
     > 2. 在这种情况下，什么都没有返回
 
-    ```c++
+    ```cpp
     words.insert({"ten", "seven", "six"});  // Inserting an initializer list
     ```
 
@@ -265,7 +265,7 @@ set1.insert(set2.begin(), set2.end());
 
 插入元素（转移构造）
 
-```c++
+```cpp
 //使用转移构造函数添加新元素3，比insert效率高
 set1.emplace(3);
 ```
@@ -276,7 +276,7 @@ set1.emplace(3);
 
 删除元素
 
-```c++
+```cpp
 //删除操作，成功返回1，失败返回0
 set1.erase(1);
 //删除操作，成功返回下一个pair的迭代器
@@ -289,7 +289,7 @@ set1.erase(set1.begin(), set1.end());
 
 篮子数目
 
-```c++
+```cpp
 //返回容器中的篮子总数
 set1.bucket_count();
 ```

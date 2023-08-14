@@ -18,7 +18,7 @@ HTTP 是超文本传输协议，HyperText Transfer Protocol
 
 ### HTTP 常见状态码
 
-![ 五大类 HTTP 状态码 ](https://raw.githubusercontent.com/Overmind7/images/main/img/6-%25E4%25BA%2594%25E5%25A4%25A7%25E7%25B1%25BBHTTP%25E7%258A%25B6%25E6%2580%2581%25E7%25A0%2581.png)
+![ 五大类 HTTP 状态码 ](https://raw.githubusercontent.com/Overmind7/images/main/img/6-%E4%BA%94%E5%A4%A7%E7%B1%BBHTTP%E7%8A%B6%E6%80%81%E7%A0%81.png)
 
 `1xx` 类状态码属于**提示信息**，是协议处理中的一种中间状态，实际用到的比较少。
 
@@ -95,7 +95,7 @@ HTTP 由于是明文传输，所以安全上存在以下三个风险：
 - **篡改风险**，比如强制植入垃圾广告，视觉污染，用户眼容易瞎。
 - **冒充风险**，比如冒充淘宝网站，用户钱容易没。
 
-![HTTP 与 HTTPS 网络层](https://raw.githubusercontent.com/Overmind7/images/main/img/19-HTTPS%25E4%25B8%258EHTTP.png)
+![HTTP 与 HTTPS 网络层](https://raw.githubusercontent.com/Overmind7/images/main/img/19-HTTPS%E4%B8%8EHTTP.jpeg)
 
 HTTP**S** 在 HTTP 与 TCP 层之间加入了 `SSL/TLS` 协议，可以很好的解决了上述的风险：
 
