@@ -306,6 +306,7 @@ module.exports= {
             mathjax: true,
             katex: true,
             mermaid: true,
+            mark: true,
         }),
 
 
