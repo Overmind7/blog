@@ -9,7 +9,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { copyrightPlugin } from "vuepress-plugin-copyright2";
-import { prismjsPlugin } from '@vuepress/plugin-prismjs'
+// import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 
 
 import {cut} from "nodejs-jieba";
@@ -324,10 +324,10 @@ module.exports= {
 
         }),
 
-        prismjsPlugin({
-            // 配置项
-            preloadLanguages: ['cpp'],
-          }),
+        // prismjsPlugin({
+        //     // 配置项
+        //     preloadLanguages: ['cpp'],
+        //   }),
 
 
 
