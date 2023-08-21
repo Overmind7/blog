@@ -138,7 +138,7 @@ module.exports= {
         ],
 
 
-        sidebarDepth: 2,
+        sidebarDepth: 3,
         sidebar: 
         {
             '/AI/3D': [
