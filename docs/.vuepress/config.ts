@@ -146,6 +146,7 @@ module.exports= {
                   text: '3D',
                   collapsible: true,
                   children: [ 
+                    '/AI/3D/3D点云学习综述.md',
                     '/AI/3D/MVSNet.md',
                     '/AI/3D/PointMVS.md',
                     '/AI/3D/DGCNN.md',
@@ -166,7 +167,7 @@ module.exports= {
                         text: '扩散模型理论',
                         collapsible: true,
                         children: [
-                            '/AI/generate/diffusion/DDPM.md',
+                            '/diffusion/DDPM.md',
                             '/AI/generate/diffusion/DDIM.md',
                             '/AI/generate/diffusion/Score-based-Diffusion-model.md',
                             '/AI/generate/diffusion/SDE.md',
@@ -238,6 +239,41 @@ module.exports= {
                     '/AI/backbone/Decoupled-Knolwdge-Distillation.md',
                     ],
                 },
+            ],
+
+
+            '/language/CPP': [
+                {
+                  text: 'CPP',
+                //   collapsible: true,
+                
+                
+
+                  children: [ 
+                    '/language/CPP/基础知识.md',
+                    {
+                        text: '数据类型',
+                        children: [
+                            '/language/CPP/常量与变量.md',
+                            '/language/CPP/自定义数据类型.md',
+                            '/language/CPP/数组.md',
+                            '/language/CPP/指针.md',
+                            '/language/CPP/链表.md',
+                            '/language/CPP/变量的储存类别.md',
+                        ],
+
+                    },
+
+                    '/language/CPP/运算及流程控制.md',
+                    '/language/CPP/函数.md',
+                    '/language/CPP/输入与输出.md',
+                    '/language/CPP/类和面向对象.md',
+                    '/language/CPP/数据共享与保护.md',
+
+                    
+                    ],
+                },
+                { text: '返回', link:'./README.md' },
             ],
 
         },
