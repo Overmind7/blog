@@ -197,6 +197,12 @@ set1.empty();	//若容器为空，则返回 true；否则 false
 
 查找
 
+::: warning
+
+**失败返回end()**
+
+:::
+
 ```cpp
 set1.find(2);	//查找2，找到返回迭代器，失败返回end()
 ```
