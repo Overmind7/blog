@@ -57,3 +57,9 @@ MeshDiffusion
 
 
 ![image-20230330142807529](https://raw.githubusercontent.com/Overmind7/images/main/img/image-20230330142807529.png)
+
+
+
+
+
+[PointGPT](./PointGPT.md)
