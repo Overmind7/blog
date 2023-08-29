@@ -12,7 +12,62 @@ sidebar: auto
 
 
 
-substring
+push_back 函数
+
+上述代码输出的结果为："Hello!"
+
+请注意，push_back函数仅适用于向字符串添加一个字符。如果要添加一个字符串，可以使用字符串的加号运算符（+）或者append函数
+
+
+
+`substring` 函数
+
+```cpp
+substr(int index,int len)
+```
+
+表示从下标为index的地方开始算，截取len长度的字符。
+
+如果只有一个参数则表示截取从该位置到末尾。
+
+
+
+`split` 函数
+
+标准库里没有，要自己实现。
+
+例如，分割以空格隔开的字符串，可能在前后和中间含有多个空格。
+
+```cpp
+vector<string> splitString(string sen){
+    vector<string> vec;
+    while (sen.find(" ") != sen.npos) {
+        if(sen.find(" ") == 0 ){
+            sen = sen.substr(sen.find(" ") + 1, sen.length());
+            continue;
+        }else{
+            vec.push_back(sen.substr(0, sen.find(" ")));
+            sen = sen.substr(sen.find(" ") + 1, sen.length());
+        }
+
+    } 
+    if(sen == "")return vec;
+    else {
+        vec.push_back(sen);		   
+        return vec;
+    }
+}
+```
+
+
+
+`find` 函数
+
+使用`string`类的`find`成员函数可以找到一个字符串在另一个字符串中的位置。`find`函数返回目标字符串在源字符串中的第一个匹配位置的索引，如果找不到则返回`string::npos`
+
+```cpp
+size_t pos = sourceString.find(targetString);
+```
 
 
 
