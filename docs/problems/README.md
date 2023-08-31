@@ -133,3 +133,27 @@ apt-get update
 apt-get install sudo
 ```
 
+
+
+## GIT
+
+### Git 强制更新覆盖本地代码
+
+当从git上下拉了代码，做了一些测试修改，远程分支有更新时，又不想提交本地代码到远程仓库，只想以最新的代码覆盖本地修改的代码。可以这样做
+
+**提醒，此方法任何本地修改都将会丢失**
+
+```bash
+git fetch --all
+ 
+# 然后，你有两个选择：
+git reset --hard origin/main
+ 
+# 或者如果你在其他分支上：
+git reset --hard origin/<branch_name>
+```
+
+说明：
+`git fetch`从远程下载最新的，不会合并或rebase任何代码。
+
+然后`git reset`将主分支重置为您刚刚获取的内容。 `--hard`选项更改工作树中的所有文件以匹配`origin/main`中的文件

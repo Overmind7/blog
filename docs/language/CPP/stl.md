@@ -71,6 +71,41 @@ size_t pos = sourceString.find(targetString);
 
 
 
+### 字符串类型转换函数
+
+`stoi`： `string`型变量转换为`int`型变量
+`stol`： `string`型变量转换为`long`型变量
+`stoul`：`string`型变量转换为`unsigned long`型变量
+`stoll`： `string`型变量转换为`long long`型变量(常用)
+`stoull`：`string`型变量转换为`unsigned long long`型变量
+`stof`： `string`型变量转换为`float`型变量
+`stod`： `string`型变量转换为`double`型变量(常用)
+`stold`：`string`型变量转换为`long double`型变量
+
+::: tip 技巧
+在日常使用中， 最常用的是stoll和stod这两个函数， stoll可以兼容stoi，stol； 而stod可以兼容stof。
+
+:::
+
+例：
+
+```cpp
+#include<iostream>
+#include<string> 
+using namespace std;
+int main() {
+	string s = "11.11";
+	double a = stod(s);
+	cout << a;
+return 0; }
+```
+
+
+
+> [【最贴心】C++字符串转换(stoi；stol；stoul；stoll；stoull；stof；stod；stold)_来老铁干了这碗代码的博客-CSDN博客](https://zhanglong.blog.csdn.net/article/details/110290292?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-110290292-blog-131157099.235^v38^pc_relevant_sort_base3&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-110290292-blog-131157099.235^v38^pc_relevant_sort_base3&utm_relevant_index=1)
+
+
+
 ## Vector
 
 
@@ -356,4 +391,109 @@ set1.erase(set1.begin(), set1.end());
 //返回容器中的篮子总数
 set1.bucket_count();
 ```
+
+
+
+## Stack 栈
+
+栈提供push 和 pop 等等接口，所有元素必须符合先进后出规则，所以栈不提供走访功能，也不提供迭代器(iterator)。 不像是set 或者map 提供迭代器iterator来遍历所有元素。
+
+**栈是以底层容器完成其所有的工作，对外提供统一的接口，底层容器是可插拔的（也就是说我们可以控制使用哪种容器来实现栈的功能）。**
+
+所以STL中栈往往不被归类为容器，而被归类为container adapter（容器适配器）。
+
+那么问题来了，STL 中栈是用什么容器实现的？
+
+从下图中可以看出，栈的内部结构，栈的底层实现可以是vector，deque，list 都是可以的， 主要就是数组和链表的底层实现。
+
+**我们常用的SGI STL，如果没有指定底层实现的话，默认是以deque为缺省情况下栈的底层结构。**
+
+deque是一个双向队列，只要封住一段，只开通另一端就可以实现栈的逻辑了。
+
+**SGI STL中 队列底层实现缺省情况下一样使用deque实现的。**
+
+我们也可以指定vector为栈的底层实现，初始化语句如下：
+
+```cpp
+std::stack<int, std::vector<int> > third;  // 使用vector为底层容器的栈
+```
+
+### 定义
+
+```cpp
+stack<int> s; //表示定义一个类型为int名字为s的栈
+```
+
+### 压入
+
+插入的函数是push，例如插入3：
+
+```cpp
+s.push(3)
+```
+
+### 弹出
+
+弹出的函数是pop，且弹出的是顶部元素，示例：
+
+```cpp
+s.pop();
+```
+
+无返回值，如果需要栈顶元素，需要在 `pop` 之前 `top`
+
+### 栈顶元素
+
+顶部元素是top，例如输出栈顶元素：
+
+```cpp
+cout<<s.top();
+```
+
+和 `pop` 一样，栈不能为空，否则报错。
+
+### 是否为空
+
+函数为`empty`，为空则返回1，反之返回0，示例：
+
+```cpp
+if(s.empty()) cout<<"栈为空";
+else cout<<"栈不为空";
+```
+
+
+
+## 队列
+
+### queue
+
+|      | 函数原型：push、pop、back、front | 解释             |
+| ---- | -------------------------------- | ---------------- |
+| 1    | `push(elem)`                     | 向队尾添加元素   |
+| 2    | `emplace()`                      | 向队尾添加元素   |
+| 3    | `pop()`                          | 移除当前队首元素 |
+| 4    | `back()`                         | 返回队尾元素     |
+| 5    | `front()`                        | 返回队首元素     |
+
+
+::: warning 注意
+
+- `push`与`emplace`区别详见 :[栈(stack)的使用及push与emplace异同点](https://blog.csdn.net/AAADiao/article/details/130850283?spm=1001.2014.3001.5501)
+- `std::queue` 不提供迭代器访问元素，只能通过 front() 和 back() 来访问队列的第一个和最后一个元素。
+- `std::queue` 不支持随机访问，不能通过索引访问队列中的元素。
+
+- `std::queue` 的底层容器可以在创建时指定，例如使用 `std::list` 作为底层容器：`std::queue<int, std::list<int>> myQueue;`
+    - 默认 `dequeue`
+
+:::
+
+#### queue 其他操作
+
+|      | 函数原型：empty、size、swap | 解释                            |
+| ---- | --------------------------- | ------------------------------- |
+| 1    | `empty()`                   | 判断队列是否为空                |
+| 2    | `size()`                    | 返回队列的大小                  |
+| 3    | `swap(queue<T> & que)`      | 将当前队列中元素和que中元素交换 |
+
+**注意：** `swap()`交换的两个队列中包含元素的类型必须相同。
 
