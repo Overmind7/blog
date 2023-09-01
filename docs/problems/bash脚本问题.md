@@ -66,3 +66,9 @@ sidebar: auto
 ————————————————
 版权声明：本文为CSDN博主「程序员小熊」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/xiongchun11/article/details/78832947
+
+
+
+
+
+[shell/sh脚本里的$1是什么意思](https://blog.csdn.net/crazyjinks/article/details/131204200?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-4-131204200-blog-86586475.235^v38^pc_relevant_sort_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-4-131204200-blog-86586475.235^v38^pc_relevant_sort_base3&utm_relevant_index=3)

@@ -271,6 +271,7 @@ module.exports= {
                     '/language/CPP/输入与输出.md',
                     '/language/CPP/类和面向对象.md',
                     '/language/CPP/数据共享与保护.md',
+                    '/language/CPP/stl.md',
 
                     
                     ],
