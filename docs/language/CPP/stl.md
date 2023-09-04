@@ -74,13 +74,22 @@ size_t pos = sourceString.find(targetString);
 ### 字符串类型转换函数
 
 `stoi`： `string`型变量转换为`int`型变量
+
 `stol`： `string`型变量转换为`long`型变量
+
 `stoul`：`string`型变量转换为`unsigned long`型变量
+
 `stoll`： `string`型变量转换为`long long`型变量(常用)
+
 `stoull`：`string`型变量转换为`unsigned long long`型变量
+
 `stof`： `string`型变量转换为`float`型变量
+
 `stod`： `string`型变量转换为`double`型变量(常用)
+
 `stold`：`string`型变量转换为`long double`型变量
+
+
 
 ::: tip 技巧
 在日常使用中， 最常用的是stoll和stod这两个函数， stoll可以兼容stoi，stol； 而stod可以兼容stof。
@@ -106,7 +115,287 @@ return 0; }
 
 
 
+`to_string` 函数
+
+函数的主要作用是将数字转换为字符串。
+
+> [C++ to_string函数详解_笔记大全](https://www.python100.com/html/93357.html)
+
+
+
+
+
+
+
 ## Vector
+
+[C++vector容器无敌详细_c++创建vector_拒绝摆烂的博客-CSDN博客](https://blog.csdn.net/qq_45577081/article/details/115752585)
+
+[C++：vector小指南（附带一些新手错误） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/336492399?utm_id=0)
+
+::: warning
+
+对于二维vector变量，vv.size()的值vector的行数，vv[i].size()的值是vector的列数
+
+:::
+
+
+
+使用vector容器的头文件是`#include< vector >`
+
+### 概念
+
+vector容器常被成为向量容器(据说是线性代数中的一维数组就是叫做向量)
+
+vector是一个动态大小数组的顺序容器,可以认为vector是存放任意类型的动态数组
+
+vector的特性:
+
+顺序序列：vector容器是按照严格的线性序列排序
+
+动态数组：vector容器支持对序列中元素快速访问元素通过下标的方式,也可在首尾快速的删除或增加元素，当vector的元素数量超过他的容量时,容量会增倍(vetcor.capacity());
+
+### vector构造函数
+
+`vetcor()`：创建一个空的vector容器。
+
+`vector(int n)`：创建一个size()为n的vector容器,元素值为0。
+
+`vector(int n,const T& t)`：创建一个size()为n的vector容器且每个元素值为t。
+
+`vector(const vector&)`：复制另一个vector容器内容到该容器中
+
+`vector(begin,end)`：复制一个数组区间为 [begin,end)(注意是左开右闭) 的值到vector中
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    int s[3]={1,2,3};
+    vector<int> temp(3);
+    //temp容器元素为0,0,0
+    vector<int> p(5,3);
+    //p容器元素为3,3,3,3,3
+    vector<int> q(p);
+    //q容器元素为3,3,3,3,3
+    vector<int> tmp(s,s+3);
+    //tmp容器元素为1,2,3
+    return 0;
+}
+
+```
+
+
+
+### vector增加函数
+
+`void push_back(const T& t)`：往vector容器最后一个元素位置后添加元素t。
+
+`iterator insert(iterator iter,const T& t)`：往iter迭代器指向元素前添加元素t。
+
+`iterator insert(iterator iter,int n,const T& t)`：往iter迭代器指向元素前添加n个值为t的元素。
+
+`iterator insert(iterator iter,iterator first,iterator last)`：往iter迭代器指向元素前插入另一个相同类型vector容器的 [first,last) 间的元素。
+
+`iterator emplace (const_iterator position, Args&&… args)`;往position迭代器指定位置前插入一个元素，并返回当前位置。(c++11新增函数)
+
+`void emplace_back (Args&&… args)`;往vector容器后插入一个元素，效率高于push_back()函数。
+
+::: tip 注
+
+vector容器中没有`push_front()`函数
+
+:::
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    vector<int> s(2,4);
+    vector<int> p;
+    p.push_back(1);
+    //p容器内元素为1
+    p.insert(p.begin(),2);
+    //p容器内元素为2,1;
+    p.insert(p.end(),2,3);
+    //因为end()是指最后一个元素再下一个位置 p容器内元素为2,1,3,3;
+    p.insert(p.begin(),s.begin(),s.end());
+    //p容器值为4,4,2,1,3,3
+    return 0;
+}
+```
+
+### vector删除函数
+
+void pop_back()：删除容器最后一个元素。
+
+iterator erase(iterator iter)：删除iter位置的元素。
+
+iterator erase(iterator first,iterator last)：删除容器内[first,last)的元素。
+
+iterator clear()：清除容器内所有元素。
+
+
+
+::: tip 注
+
+很多同学在使用迭代器遍历vector删除指定元素时,会出现野指针问题,
+
+原因在于erase(iterator iter)删除一个元素时会返回下一个元素的迭代器，而再++iter,则会出现指针指向错误,
+
+删除最后一个元素是返回end()，此时在++会出现段错误。
+
+:::
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    vector<int> s(2,4);
+    s.push_back(1);
+    s.push_back(3);
+    s.push_back(2);
+    vector<int>::iterator iter=s.begin();
+    //遍历+删除指定元素正确用法
+    while(iter!=s.end()){
+          if(*iter==5)
+          s.erase(iter);
+          else iter++;
+    }
+    s.pop_back();
+    //s容器内元素为4,4,1,3
+    s.erase(s.begin());
+    //s容器内元素为4,1,3
+    s.erase(s.begin(),s.end());
+    //s容器为空
+    s.push_back(1);
+    s.clear();
+    //s容器为空
+    return 0;
+}
+```
+
+
+
+### vector遍历函数
+
+`at(int pos)` ：返回pos位置处元素的引用，如果超出范围会返回异常错误,所以相对于[]更安全。
+
+`front()`：返回首元素的引用
+
+`back()`：返回尾元素的应用
+
+`iterator begin()`：返回向量vector容器的头指针,指向第一个元素
+
+`iterator end()`：返回向量vector容器的尾指针,指向最后一个元素的下一个位置
+
+`reverse_iterator rbegin()`：反向迭代器，指向最后一个元素
+
+`reverse_iterator rend()`：反向迭代器，指向第一个元素之前的位置
+
+::: tip 注
+
+反向迭代器与正向迭代器声明时不同需要改为reverse_iterator
+
+:::
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    vector<int> s(2,4);
+    s.push_back(1);
+    s.push_back(3);
+    s.push_back(2);
+    vector<int>::iterator iter1=s.begin();
+    while(iter1!=s.end()){
+        cout << *iter1;
+        iter1++;
+    }
+    //输出为4,4,1,3,2
+    vector<int>::reverse_iterator iter2=s.rbegin();
+    while(iter2!=s.rend()){
+        cout << *iter2;
+        iter2++;
+    }
+    //输出为2,3,1,4,4
+    return 0;
+}
+```
+
+
+
+### vector关于元素数量函数
+
+`void reserve (size_type n)`：申请n个元素个数的内存空间，一次性分配效率较高.
+
+`int size()`：返回vector容器元素个数。
+
+`int capacity()`：返回vector容器容量。
+
+`resize()`：设置vector容器大小。
+
+`bool empty()`：判断vector容器是否为空,为空返回`true`,否则返回`false`。
+
+::: tip 注
+
+当vector内元素超过开始设定的size()大小,vector的容量会翻倍增加(1->2,2->4…)
+:::
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    vector<int> s;
+    s.resize(5);
+    cout <<s.size();
+    //输出size()为5
+    for(int i=0;i<s.size();i++)
+        s[i]=i;
+    cout << s.capacity();
+    //s的容量为5
+    s.push_back(1);
+    cout << s.capacity();
+    //s的容量为10
+    cout << s.empty();
+    //输出为0,flase
+    s.clear();
+    cout << s.empty();
+    //输出为1,true
+    return 0;
+}
+
+```
+
+### vector其他函数
+
+void swap(vector&)：交换两个同类型向量的数据 ??
+
+void assign(int n,const T& x)：设置向量中前n个元素的值为x
+
+void assign(const_iterator first,const_iterator last)：向量中[first,last)中元素设置成当前向量元素
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(){
+    vector<int> s(5,2);
+    vector<int> p(4,3);
+    s.swap(p);
+    //s容器内元素为3,3,3,3 p容器内元素为2,2,2,2,2
+    s.assign(2,1);
+    //s容器内元素为1,1,3,3
+    p.assign(s.begin(),s.end());
+    //p容器内元素为1,1,3,3
+    return 0;
+}
+```
 
 
 
@@ -139,11 +428,18 @@ return 0; }
 一.对该函数的简要介绍：
 
 1、`unordered_map `是存储`<key, value>`键值对的关联式容器，其允许通过 `key `快速的索引到与其对应的`value（hashmap<key> == value）`
+
 2、`unordered_map `中，键值通常用于唯一的标识元素，而映射值是一个对象，其内容与此键关联，键和映射的类型可以不同
+
 3、在内部，`unordered_map `没有对`<key, value>`进行排序，`unordered_map `将相同哈希值的键值对放在对应的桶中
+
 4、`unordered_map `容器通过key访问单个元素比map快，但它遍历元素子集的范围和迭代方面效率较低
+
 5、`unordered_map `实现了直接访问操作符（`operator[]`）允许通过 `key `作为参数访问 `value`
+
 6、`unordered_map `的迭代器至少是前向迭代器
+
+
 
 二. unordered_map 迭代器
 
