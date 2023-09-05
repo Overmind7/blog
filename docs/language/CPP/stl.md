@@ -165,7 +165,7 @@ vector的特性:
 
 `vector(const vector&)`：复制另一个vector容器内容到该容器中
 
-`vector(begin,end)`：复制一个数组区间为 [begin,end)(注意是左开右闭) 的值到vector中
+`vector(begin,end)`：复制一个数组区间为 [begin,end)(注意是左开右闭?) 的值到vector中
 
 ```cpp
 #include <iostream>
