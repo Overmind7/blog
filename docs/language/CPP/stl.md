@@ -188,6 +188,8 @@ int main(){
 
 
 
+
+
 ### vector增加函数
 
 `void push_back(const T& t)`：往vector容器最后一个元素位置后添加元素t。
@@ -402,6 +404,16 @@ int main(){
 ## Map
 
 > [unordered_map和map的区别_unordered_map map_美丽心灵的永恒阳光的博客-CSDN博客](https://blog.csdn.net/weixin_39690454/article/details/108354997)
+
+
+
+::: warning
+
+pair< > 的 first 和 second 属于模板的成员函数，用 `.` 调用
+
+关联容器如 map<key, value> 等的 first 和 second 是迭代器，当成指针用，调用应该使用 `->` 
+
+:::
 
 
 
