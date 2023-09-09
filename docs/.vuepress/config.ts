@@ -57,6 +57,10 @@ module.exports= {
                 text: '编程语言/框架',
                 children: [
                     {
+                        text: 'coding',
+                        link: '/coding'
+                    },
+                    {
                         text: 'C++',
                         link: '/language/CPP'
                     },
@@ -276,6 +280,17 @@ module.exports= {
                     
                     ],
                 },
+                { text: '返回', link:'./README.md' },
+            ],
+            '/coding': [
+                
+                '/coding/代码随想录.md',
+                '/coding/排序算法.md',
+                '/coding/滑动窗口.md',
+                '/coding/KMP算法.md',
+                '/coding/二叉树.md',
+                '/coding/回溯算法.md',
+                '/coding/贪心算法.md',
                 { text: '返回', link:'./README.md' },
             ],
 
