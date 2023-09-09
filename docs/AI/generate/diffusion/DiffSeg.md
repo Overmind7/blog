@@ -1,3 +1,9 @@
+---
+sidebar: auto
+---
+
+
+
 # DiffSeg
 
 Diffuse, Attend, and Segment: Unsupervised Zero-Shot Segmentation using Stable Diffusion
@@ -167,7 +173,7 @@ Covariance
 
 > [jiwoon-ahn/psa: Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation, CVPR 2018 (github.com)](https://github.com/jiwoon-ahn/psa)
 
-[[论文笔记\]AffinityNet_动如脱兔((≡ຶ̑ꀬ≡ຶ̑))静如脱兔的博客-CSDN博客](https://blog.csdn.net/qq_36686169/article/details/106234954)
+[论文笔记\]AffinityNet_动如脱兔((≡ຶ̑ꀬ≡ຶ̑))静如脱兔的博客-CSDN博客](https://blog.csdn.net/qq_36686169/article/details/106234954)
 
 输入：原始图像
 
