@@ -282,6 +282,7 @@ module.exports= {
                 },
                 { text: '返回', link:'./README.md' },
             ],
+
             '/coding': [
                 
                 '/coding/代码随想录.md',
@@ -293,6 +294,15 @@ module.exports= {
                 '/coding/贪心算法.md',
                 { text: '返回', link:'./README.md' },
             ],
+
+            '/base/database': [
+                '/base/database/Mysql检索.md',
+                '/base/database/排序检索数据.md',
+                '/base/database/过滤数据.md',
+
+                { text: '返回', link:'./README.md' },
+            ],
+
 
         },
 
