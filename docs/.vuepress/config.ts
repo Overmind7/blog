@@ -65,6 +65,10 @@ module.exports= {
                         link: '/language/CPP'
                     },
                     {
+                        text: 'java',
+                        link: '/language/java',
+                    },
+                    {
                         text: 'python',
                         link: '/language/python'
                     },
@@ -93,7 +97,11 @@ module.exports= {
                     {
                         text:'操作系统',
                         link:'/base/os'
-                    }
+                    },
+                    {
+                        text:'软件设计',
+                        link:'/base/softwaredesign',
+                    },
 
                 ]
             },
@@ -274,7 +282,32 @@ module.exports= {
                     '/language/CPP/函数.md',
                     '/language/CPP/输入与输出.md',
                     '/language/CPP/类和面向对象.md',
-                    '/language/CPP/数据共享与保护.md',
+                    {
+                        text: '数据共享与保护',
+                        children: [
+                            '/language/CPP/类的静态成员和静态成员函数.md',
+                            '/language/CPP/友元.md',
+                            '/language/CPP/const型数据.md',
+                        ],
+                    },
+
+                    {
+                        text: '继承与派生',
+                        children: [
+                            '/language/CPP/继承.md',
+                            '/language/CPP/派生类的构造函数和析构函数.md',
+                            '/language/CPP/多重继承.md',
+                            '/language/CPP/基类与派生类的转换.md',
+                            '/language/CPP/继承与组合.md',
+                        ],
+                    },
+                    
+                    {
+                        text: '多态与虚函数',
+                        children: [
+                            '/language/CPP/虚函数与动态多态性.md',
+                        ],
+                    },
                     '/language/CPP/stl.md',
 
                     
@@ -327,10 +360,10 @@ module.exports= {
         docsBranch: 'main',
 
         // 默认是 false, 设置为 true 来启用
-        editLinks: true,
+        editLinks: false,
 
         // 默认为 "Edit this page"
-        editLinkText: '编辑此页面'
+        // editLinkText: '编辑此页面'
 
     }),
 
