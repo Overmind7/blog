@@ -257,62 +257,51 @@ module.exports= {
 
 
             '/language/CPP': [
+                '/language/CPP/基础知识.md',
                 {
-                  text: 'CPP',
-                //   collapsible: true,
-                
-                
+                    text: '数据类型',
+                    children: [
+                        '/language/CPP/常量与变量.md',
+                        '/language/CPP/自定义数据类型.md',
+                        '/language/CPP/数组.md',
+                        '/language/CPP/指针.md',
+                        '/language/CPP/链表.md',
+                        '/language/CPP/变量的储存类别.md',
+                    ],
 
-                  children: [ 
-                    '/language/CPP/基础知识.md',
-                    {
-                        text: '数据类型',
-                        children: [
-                            '/language/CPP/常量与变量.md',
-                            '/language/CPP/自定义数据类型.md',
-                            '/language/CPP/数组.md',
-                            '/language/CPP/指针.md',
-                            '/language/CPP/链表.md',
-                            '/language/CPP/变量的储存类别.md',
-                        ],
+                },
 
-                    },
-
-                    '/language/CPP/运算及流程控制.md',
-                    '/language/CPP/函数.md',
-                    '/language/CPP/输入与输出.md',
-                    '/language/CPP/类和面向对象.md',
-                    {
-                        text: '数据共享与保护',
-                        children: [
-                            '/language/CPP/类的静态成员和静态成员函数.md',
-                            '/language/CPP/友元.md',
-                            '/language/CPP/const型数据.md',
-                        ],
-                    },
-
-                    {
-                        text: '继承与派生',
-                        children: [
-                            '/language/CPP/继承.md',
-                            '/language/CPP/派生类的构造函数和析构函数.md',
-                            '/language/CPP/多重继承.md',
-                            '/language/CPP/基类与派生类的转换.md',
-                            '/language/CPP/继承与组合.md',
-                        ],
-                    },
-                    
-                    {
-                        text: '多态与虚函数',
-                        children: [
-                            '/language/CPP/虚函数与动态多态性.md',
-                        ],
-                    },
-                    '/language/CPP/stl.md',
-
-                    
+                '/language/CPP/运算及流程控制.md',
+                '/language/CPP/函数.md',
+                '/language/CPP/输入与输出.md',
+                '/language/CPP/类和面向对象.md',
+                {
+                    text: '数据共享与保护',
+                    children: [
+                        '/language/CPP/类的静态成员和静态成员函数.md',
+                        '/language/CPP/友元.md',
+                        '/language/CPP/const型数据.md',
                     ],
                 },
+
+                {
+                    text: '继承与派生',
+                    children: [
+                        '/language/CPP/继承.md',
+                        '/language/CPP/派生类的构造函数和析构函数.md',
+                        '/language/CPP/多重继承.md',
+                        '/language/CPP/基类与派生类的转换.md',
+                        '/language/CPP/继承与组合.md',
+                    ],
+                },
+                
+                {
+                    text: '多态与虚函数',
+                    children: [
+                        '/language/CPP/虚函数与动态多态性.md',
+                    ],
+                },
+                '/language/CPP/stl.md',
                 { text: '返回', link:'./README.md' },
             ],
 
