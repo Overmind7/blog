@@ -63,3 +63,9 @@ MeshDiffusion
 
 
 [PointGPT](./PointGPT.md)
+
+
+
+-------------
+
+[3d自监督](./3d自监督.md)
