@@ -24,3 +24,21 @@ tensorboard --logdir=./runs
 
 
 
+
+
+## 如何关闭Tensorboard服务器
+
+获取正在运行的tensorboard进程详情
+ps -ef|grep tensorboard
+
+样本输出 *：uzzal_x+ 4585 4413 0 02:46 pts/4 00:00:01 bin/python /bin/tensorboard --logdir=runs/
+使用pid**（进程id）杀死进程**
+
+```bash
+kill -9 <pid>
+```
+
+第一个数字4585是我当前的tensorflow的pid
+————————————————
+版权声明：本文为CSDN博主「shuaiqidexiaojiejie」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/shuaiqidexiaojiejie/article/details/131000622

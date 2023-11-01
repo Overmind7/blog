@@ -38,3 +38,8 @@
 
 [Decoupled Knolwdge Distillation](./Decoupled-Knolwdge-Distillation.md)
 
+
+
+----------------
+
+[检测](./检测.md)
