@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-644b9e46","path":"/AI/backbone/GCN.html","title":"GCN","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1690363942000},"filePathRelative":"AI/backbone/GCN.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

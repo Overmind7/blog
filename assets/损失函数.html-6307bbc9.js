@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-08ed2e79","path":"/AI/backbone/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0.html","title":"损失函数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1690363942000},"filePathRelative":"AI/backbone/损失函数.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

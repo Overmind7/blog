@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c37a960e","path":"/language/CPP/%E7%BB%A7%E6%89%BF%E4%B8%8E%E7%BB%84%E5%90%88.html","title":"继承与组合","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695633232000},"filePathRelative":"language/CPP/继承与组合.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

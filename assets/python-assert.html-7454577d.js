@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-8a88ea92","path":"/language/python/python-assert.html","title":"断言 assert","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1691418219000},"filePathRelative":"language/python/python-assert.md","copyright":{"author":"wenwei"},"excerpt":""}');export{t as data};

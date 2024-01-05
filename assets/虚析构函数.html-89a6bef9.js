@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-13bf366e","path":"/language/CPP/%E8%99%9A%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0.html","title":"虚析构函数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695802709000},"filePathRelative":"language/CPP/虚析构函数.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

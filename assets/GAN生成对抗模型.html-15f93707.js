@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-90d472c0","path":"/AI/generate/gan/GAN%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E6%A8%A1%E5%9E%8B.html","title":"GAN","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1690363942000},"filePathRelative":"AI/generate/gan/GAN生成对抗模型.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

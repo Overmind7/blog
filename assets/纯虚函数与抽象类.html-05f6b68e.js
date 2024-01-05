@@ -1,0 +1,1 @@
+import{_,o as t,c as a,a as e,d as c}from"./app-04b0d2b0.js";const o={},r=e("h1",{id:"纯虚函数与抽象类",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#纯虚函数与抽象类","aria-hidden":"true"},"#"),c(" 纯虚函数与抽象类")],-1),s=[r];function n(d,i){return t(),a("div",null,s)}const l=_(o,[["render",n],["__file","纯虚函数与抽象类.html.vue"]]);export{l as default};

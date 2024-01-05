@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3ca2edb0","path":"/AI/3D/","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1704268319000},"filePathRelative":"AI/3D/README.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

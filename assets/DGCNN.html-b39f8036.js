@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-493e74a9","path":"/AI/3D/DGCNN.html","title":"DGCNN/EdgeConv","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"创新点","slug":"创新点","link":"#创新点","children":[]}],"git":{"updatedTime":1690388455000},"filePathRelative":"AI/3D/DGCNN.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

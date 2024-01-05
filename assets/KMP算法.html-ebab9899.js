@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-83bd35b2","path":"/coding/KMP%E7%AE%97%E6%B3%95.html","title":"KMP 算法","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1693288731000},"filePathRelative":"coding/KMP算法.md","copyright":{"author":"wenwei"},"excerpt":""}');export{t as data};

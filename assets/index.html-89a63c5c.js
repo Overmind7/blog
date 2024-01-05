@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-738cf7e5","path":"/base/softwaredesign/","title":"软件设计","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695633232000},"filePathRelative":"base/softwaredesign/README.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

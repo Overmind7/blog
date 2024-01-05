@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-de0a6680","path":"/language/CPP/%E9%87%8D%E8%BD%BD%E6%B5%81%E6%8F%92%E5%85%A5%E8%BF%90%E7%AE%97%E7%AC%A6.html","title":"重载流插入运算符","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695802709000},"filePathRelative":"language/CPP/重载流插入运算符.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

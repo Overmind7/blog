@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-77fe2484","path":"/AI/backbone/DETR.html","title":"DETR","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1690363942000},"filePathRelative":"AI/backbone/DETR.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

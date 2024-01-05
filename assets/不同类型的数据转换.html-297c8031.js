@@ -1,0 +1,1 @@
+import{_,o as t,c as a,a as e,d as c}from"./app-04b0d2b0.js";const o={},r=e("h1",{id:"不同类型的数据转换",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#不同类型的数据转换","aria-hidden":"true"},"#"),c(" 不同类型的数据转换")],-1),s=[r];function n(d,i){return t(),a("div",null,s)}const l=_(o,[["render",n],["__file","不同类型的数据转换.html.vue"]]);export{l as default};

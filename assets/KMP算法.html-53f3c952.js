@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,a as e,d as o}from"./app-04b0d2b0.js";const s={},_=e("h1",{id:"kmp-算法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#kmp-算法","aria-hidden":"true"},"#"),o(" KMP 算法")],-1),n=e("p",null,"最长相等前后缀",-1),r=[_,n];function d(i,l){return a(),c("div",null,r)}const f=t(s,[["render",d],["__file","KMP算法.html.vue"]]);export{f as default};

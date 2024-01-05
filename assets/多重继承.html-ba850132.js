@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6ab8fc27","path":"/language/CPP/%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF.html","title":"多重继承","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695633232000},"filePathRelative":"language/CPP/多重继承.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

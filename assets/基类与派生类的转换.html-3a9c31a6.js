@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1d5a3a71","path":"/language/CPP/%E5%9F%BA%E7%B1%BB%E4%B8%8E%E6%B4%BE%E7%94%9F%E7%B1%BB%E7%9A%84%E8%BD%AC%E6%8D%A2.html","title":"基类与派生类的转换","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695633232000},"filePathRelative":"language/CPP/基类与派生类的转换.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

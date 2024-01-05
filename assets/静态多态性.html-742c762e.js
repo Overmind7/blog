@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-dc194336","path":"/language/CPP/%E9%9D%99%E6%80%81%E5%A4%9A%E6%80%81%E6%80%A7.html","title":"静态多态性","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1695802709000},"filePathRelative":"language/CPP/静态多态性.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9367dc94","path":"/AI/backbone/","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1698819878000},"filePathRelative":"AI/backbone/README.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};

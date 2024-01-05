@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5aef9b28","path":"/language/python/%E4%BD%BF%E7%94%A8-python-%E7%94%9F%E6%88%90-GIF.html","title":"使用 python 生成 GIF","lang":"zh-CN","frontmatter":{"sidebar":"auto"},"headers":[],"git":{"updatedTime":1691418219000},"filePathRelative":"language/python/使用-python-生成-GIF.md","copyright":{"author":"wenwei"},"excerpt":""}');export{t as data};

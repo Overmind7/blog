@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2a359e60","path":"/AI/backbone/Swin_Transformer.html","title":"Swin Transformer","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1690363942000},"filePathRelative":"AI/backbone/Swin_Transformer.md","copyright":{"author":"wenwei"},"excerpt":""}');export{e as data};
