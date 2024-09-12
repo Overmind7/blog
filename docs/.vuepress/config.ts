@@ -165,8 +165,19 @@ module.exports= {
                     '/AI/3D/DMTet.md',
                     '/AI/3D/MeshCNN.md',
                     '/AI/3D/PointGPT.md',
-                    
+                    '/AI/3D/1.3.md',
+
                     ],
+                },
+                {
+                    text: '2024年7月',
+                    collapsible: true,
+                    children: [ 
+                        '/AI/3D/Online3d.md',
+                        '/AI/3D/ESAM.md',
+                        '/AI/3D/ConceptGraphs.md',
+                        
+                        ],
                 },
                 { text: '返回', link:'/AI/3D/README.md' },
             ],

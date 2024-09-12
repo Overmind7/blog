@@ -73,3 +73,17 @@ MeshDiffusion
 -----------
 
 [1.3](./1.3.md)
+
+
+
+----------------
+
+## 2024.July
+
+[Online3d](./Online3d.md)
+
+[EmbodiedSAM](./ESAM.md)
+
+
+
+[ConceptGraphs](./ConceptGraphs.md)
